@@ -6,6 +6,10 @@ Giving myself some practice of writing a simple command line notes app, in Ruby,
 
 Using Rspec.
 
+# Features
+
+- Create note
+
 # Process
 
 I used the Red, Green, Refactor process.
