@@ -10,11 +10,6 @@ Using Rspec.
 
 I used the Red, Green, Refactor process.
 
-```diff
-+ Red
-- Green
-Refactor
-```diff
 
 My Rspec tests use `setup`, `exercise`, `verify` as a means of ensuring that tests capture
 
