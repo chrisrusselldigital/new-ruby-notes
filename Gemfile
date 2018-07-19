@@ -1,9 +1,9 @@
 source 'http://rubygems.org'
 
-gem "rspec"
+gem 'rspec'
 
-gem "rspec-simplecov"
+gem 'rspec-simplecov'
 
-gem "rubocop"
+gem 'rubocop'
 
-gem "simplecov"
+gem 'simplecov'

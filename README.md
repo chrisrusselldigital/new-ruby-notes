@@ -4,18 +4,38 @@ Giving myself some practice of writing a simple command line notes app, in Ruby,
 
 # TDD
 
-Using Rspec.
+Using Rspec (run with `rspec`)
 
-# Features
+## How to use
 
-- Create note
+Example use case:
+
+Install via `bundle install`
+
+- `irb`
+- `require './lib/notebook.rb'`
+- `notebook = NoteBook.new`
+- `note1 = Note.new`
+- `note1.write("Hello world")`
+- `notebook.store(note1)`
+- `notebook`
+
+## Features
+
+- Create NoteBook
+- Create Note
+- Store note in NoteBook
+
+## Screenshot
+
+![screenshot](/assets/notes-screenshot.jpg "screenshot")
 
 # Process
 
-I used the Red, Green, Refactor process.
+## Starting up
+Red, Green, Refactor process.
 
-
-My Rspec tests use `setup`, `exercise`, `verify` as a means of ensuring that tests capture
+Rspec tests use `# setup`, `# exercise`, `# verify` as a means of ensuring that tests capture the
 
 I started writing the test for the note "I wish I had". This meant firstly setting up an empty project, with a `/lib` and a `/spec` file.
 
@@ -34,3 +54,16 @@ Then, having created the file including an empty class `Note`:
 Then...
 
 `Failure/Error: new_note = Note.new("some text") ArgumentError: wrong number of arguments (given 1, expected 0)`
+
+I continued until eventually creating:
+
+`Note` class
+With method:
+- `write` which allows a user to write text to the note
+
+
+`NoteBook` class
+With methods:
+- `initialize` which creates an empty array in which notes can be stored.
+N.B. this only stores notes in memory.
+- `store` which stores a named note

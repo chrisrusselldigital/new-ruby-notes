@@ -1,13 +1,8 @@
 require_relative 'notebook'
 
+# :nodoc:
 class Note
-
   def write(note)
     @note = note
   end
-
-  def save_note(note)
-    @notebook << note
-  end
-
 end

@@ -1,7 +1,7 @@
 require_relative 'note'
 
+# :nodoc:
 class NoteBook
-
   def initialize
     @list_of_notes = []
   end
@@ -9,9 +9,4 @@ class NoteBook
   def store(note)
     @list_of_notes << note
   end
-
-  def list_of_notes
-    @list_of_notes
-  end
-
 end
