@@ -1,10 +1,13 @@
+require_relative 'notebook'
 
 class Note
 
-attr_writer :note
-
-  def create(note)
+  def write(note)
     @note = note
+  end
+
+  def save_note(note)
+    @notebook << note
   end
 
 end
